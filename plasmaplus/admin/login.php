@@ -10,8 +10,23 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script></head>
 <body >
 
+<style>
+.btn-default
+{
+  background-color: #F75D58;
+  color:#FFF;
+  border-color:#F75D58;
+}
+</style>
 
   <form class="" action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
+  <!-- <img src="admin_image/Accept tasks-pana.svg" class="rounded float-right.max-width: 50%;" alt="some image"> -->
+  <div class="container">
+    <div class="col-md-4 rounded float-right" style="padding-left: 0px;  padding-right: 0px;">
+        <img src="admin_image/Accept tasks-pana.svg" class="img-responsive">
+    </div>
+</div>
+
 
     <div class="container" style="margin-top:200px;">
       <div class="row justify-content-center">
@@ -20,10 +35,11 @@
                  Plasma Plus
                   <br>Admin Login Portal
                 </h1>
+              
 
             </div>
       </div>
-      <div class="card" style="height:250px;">
+      <div class="card" style="height:400x;">
           <div class="card-body">
 
       <div class="row justify-content-lg-center justify-content-mb-center" >
@@ -40,7 +56,16 @@
   </div>
   <div class="row justify-content-lg-center justify-content-mb-center">
     <div class="col-lg-4 mb-4 " style="text-align:center"><br>
-    <div><input type="submit" name="login" class="btn btn-primary" value="LOGIN" style="cursor:pointer"></div>
+    <div><input type="submit" name="login" class="btn btn-default btn-md center-block rounded-pill" value="LOGIN" style="margin:5px;"></div> 
+    <!-- <div><input type="submit" name="go_back" class="btn btn-primary btn-md center-block" value="GO TO HOME" style="cursor:pointer"></div> -->
+    <button id="myButton"class="btn btn-default btn-md center-block rounded-pill"  >GO BACK</button>
+                  <script type="text/javascript">
+                     document.getElementById("myButton").onclick = function () {
+                     location.href = "/login";
+                       };
+                  </script>
+
+   
     </div>
   </div>
     </div>
