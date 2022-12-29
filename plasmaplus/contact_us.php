@@ -27,7 +27,7 @@ include "head.php";
     echo '<div class="alert alert-success alert_dismissible"><b><button type="button" class="close" data-dismiss="alert">&times;</button></b><b>Query Sent, We will contact you shortly. </b></div>';
 } ?>
 
-<div id="page-container" style="margin-top:50px; position: relative;min-height: 84vh;">
+<div id="page-container" style="margin-top:50px; position: relative;min-height: 90vh;">
   <div class="container">
   <div id="content-wrap" style="padding-bottom:50px;">
     <h1 class="mt-4 mb-3">Contact</h1>
@@ -60,7 +60,7 @@ include "head.php";
                     <textarea rows="10" cols="100" class="form-control" id="message" name="message" required  maxlength="999" style="resize:none"></textarea>
                 </div>
             </div>
-            <button type="submit" name="send"  class="btn btn-primary">Send Message</button>
+            <button type="submit" name="send"  class="btn btn-primary" style=background-color:#FF8787>Send Message</button>
         </form>
     </div>
     <div class="col-lg-4 mb-4">

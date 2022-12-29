@@ -8,14 +8,26 @@
     <meta name="description" content="">
     <meta name="author" content="">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/dcode.css">
+<link rel="shortcut icon" href="/assets/favicon.ico">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<style>
-</style>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
 </head>
 
 <body>
+
+
 <div class="header">
 <?php
 $active="home";
@@ -38,10 +50,10 @@ include('head.php'); ?>
     <!-- The slideshow -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="image\_107317099_blooddonor976.jpg" alt="image\_107317099_blooddonor976.jpg" width="100%" height="500">
+        <img src="resource/slide1-min.jpg" alt="resource/slide1-min.jpg" width="100%" height="500">
       </div>
       <div class="carousel-item">
-        <img src="image\Blood-facts_10-illustration-graphics__canteen.png" alt="image\Blood-facts_10-illustration-graphics__canteen.png" width="100%" height="500">
+        <img src="resource/Did you know(2)-min.png" alt="resource/Did you know(2)-min.png" width="100%" height="500">
       </div>
 
     </div>
@@ -62,7 +74,7 @@ include('head.php'); ?>
         <div class="row">
             <div class="col-lg-4 mb-4">
                 <div class="card">
-                    <h4 class="card-header card bg-info text-white" >The need for blood</h4>
+                <h4 class="card-header text-white" style="background-color: #F75D58;" >The need for blood</h4>
 
                         <p class="card-body overflow-auto" style="padding-left:2%;height:120px;text-align:left;">
                           <?php
@@ -81,7 +93,7 @@ include('head.php'); ?>
             </div>
             <div class="col-lg-4 mb-4">
                 <div class="card">
-                    <h4 class="card-header card bg-info text-white">Blood Tips</h4>
+                <h4 class="card-header text-white" style="background-color: #F75D58;" >Blood Tips</h4>
 
                     <p class="card-body overflow-auto" style="padding-left:2%;height:120px;text-align:left;">
                       <?php
@@ -104,7 +116,7 @@ include('head.php'); ?>
              
 
 
-                    <h4 class="card-header card bg-info text-white" >Who you could Help</h4>
+                <h4 class="card-header text-white" style="background-color: #F75D58;" >Who you could Help</h4>
 
                     <p class="card-body overflow-auto" style="padding-left:2%;height:120px;text-align:left;">
                       <?php
@@ -136,9 +148,14 @@ include('head.php'); ?>
             {
             while($row = mysqli_fetch_assoc($result)) {
            ?>
-            <div class="col-lg-4 col-sm-6 portfolio-item" ><br>
-            <div class="card" style="width:300px">
-                <img class="card-img-top" src="image\blood_drop_logo.jpg" alt="Card image" style="width:100%;height:300px">
+            <div class="col-lg-5 col-sm-6 portfolio-item" ><br>
+            <div class="card" style="width:300px"> 
+            <?php if ($row['donor_gender']=='Male')
+            {?> <img class="card-img-top"  src="image\male.png" style="width:100%;height:300px"> <?php } 
+            else 
+            {?> <img class="card-img-top"  src="image\female.jpg" style="width:100%;height:300px"> <?php } 
+
+            ?>
                 <div class="card-body">
                   <h3 class="card-title"><?php echo $row['donor_name']; ?></h3>
                   <p class="card-text">
@@ -174,7 +191,7 @@ include('head.php'); ?>
 
             </div>
             <div class="col-lg-6">
-                <img class="img-fluid rounded" src="image\blood_donationcover.jpeg" alt="" >
+                <img class="img-fluid rounded" src="resource/info.png" alt="" >
             </div>
         </div>
         
@@ -198,9 +215,21 @@ include('head.php'); ?>
 
                ?></p>
               </div>
+              <!-- <style type="text/css">
+		.btn-circle.btn-xl {
+			width: 50px;
+			height: 50px;
+			padding: 13px 18px;
+			border-radius: 60px;
+			font-size: 15px;
+			text-align: right;
+		}
+	</style> -->
             <div class="col-md-4">
-                <a class="btn btn-lg btn-secondary btn-block" href="donate_blood.php" style="align:center; background-color:#FF8787;color:#273746 ">Become a Donor </a>
+                <a class="btn btn-lg btn-secondary btn-block" href="donate_blood.php" style="align:center; background-color: #F75D58;color:#FFFFFF ">Become a Donor </a>
+                <!-- <a class="btn btn-lg btn-secondary btn-block" href="chat/index.php" style=" background-color: #F75D58;color:#FFFFFF ">Chat With Donor </a> -->
             </div>
+           
         </div>
 
     </div>

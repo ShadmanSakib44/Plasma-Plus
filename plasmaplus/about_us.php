@@ -21,7 +21,7 @@ include "head.php";
 ?>
 
 
-<div id="page-container" style="margin-top:50px; position: relative;min-height: 84vh;">
+<div id="page-container" style="margin-top:50px; position: relative;min-height: 90vh;">
   <div class="container">
   <div id="content-wrap" style="padding-bottom:50px;">
 <div class="row">
@@ -40,8 +40,8 @@ include "head.php";
       </p>
 
     </div>
-    <div class="col-lg-6">
-        <img class="img-fluid rounded" src="image\team.jpg" style="height:500px" alt="error"  >
+    <div class="col-lg-5">
+        <img class="rounded float-right"  src="image\team.jpg" style="height:550px" alt="error"  >
     </div>
 </div>
 </div></div>
