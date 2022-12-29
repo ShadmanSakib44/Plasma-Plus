@@ -38,7 +38,7 @@
     padding: 9px;
     position: relative;
     top: 1%;
-    box-shadow: inset 0 -15px 30px rgba(0,0,0,0.4);
+    box-shadow: inset 0 -5px 10px rgba(255, 255, 255);
     font: 14px "Poppins", sans-serif;
     -webkit-font-smoothing: antialiased;
     -webkit-user-select: none;

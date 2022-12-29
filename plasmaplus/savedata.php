@@ -10,7 +10,7 @@ $conn=mysqli_connect("localhost","root","","blood_donation") or die("Connection 
 $sql= "INSERT INTO donor_details(donor_name,donor_number,donor_mail,donor_age,donor_gender,donor_blood,donor_address) values('{$name}','{$number}','{$email}','{$age}','{$gender}','{$blood_group}','{$address}')";
 $result=mysqli_query($conn,$sql) or die("query unsuccessful.");
 
-header("Location: http://localhost/login/plasmaplus/home.php");
+header("Location: http://localhost/Plasma_Plus/plasmaplus/home.php");
 // echo '<script>alert("Welcome to Geeks for Geeks")</script>';
 mysqli_close($conn);
  ?>

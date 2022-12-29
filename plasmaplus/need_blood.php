@@ -16,9 +16,9 @@
   $active ='need';
   include('head.php') ?>
 
-  <div id="page-container" style="margin-top:50px; position: relative;min-height: 84vh;">
+  <div id="page-container" style="margin-top:50px; position: relative;min-height: 90vh;">
     <div class="container">
-    <div id="content-wrap" style="padding-bottom:50px;">
+    <div id="content-wrap" style="padding-bottom:140px;">
 
   <div class="row">
       <div class="col-lg-6">
@@ -51,6 +51,10 @@
 <div class="row">
 <div class="col-lg-4 mb-4">
 <div><input type="submit" name="search" class="btn btn-primary" value="Search" style=background-color:#FF8787 ></div>
+<!-- <img src="resource/need_blood.jpg" class="rounded float-right" alt="..."> -->
+<div class="text-center">
+  <!-- <img src="resource/need_blood.jpg" class="img-fluid" alt="..." width="100%" height="100%" style="vertical-align:bottom "> -->
+</div>
 </div>
 
 </div><div class="row">
@@ -65,7 +69,13 @@
 
       <div class="col-lg-4 col-sm-6 portfolio-item" ><br>
       <div class="card" style="width:300px">
-          <img class="card-img-top" src="image\blood_drop_logo.jpg" alt="Card image" style="width:100%;height:300px">
+          <!-- <img class="card-img-top" src="image\blood_drop_logo.jpg" alt="Card image" style="width:100%;height:300px"> -->
+          <?php if ($row['donor_gender']=='Male')
+            {?> <img class="card-img-top"  src="image\male.png" style="width:100%;height:280px"> <?php } 
+            else 
+            {?> <img class="card-img-top"  src="image\female.jpg" style="width:100%;height:280px"> <?php } 
+
+            ?>
           <div class="card-body">
             <h3 class="card-title"><?php echo $row['donor_name']; ?></h3>
             <p class="card-text">

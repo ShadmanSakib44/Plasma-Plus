@@ -10,11 +10,11 @@
   font-family: "Poppins", sans-serif;
 
   overflow:hidden;
-  background-color: #FF9494;
+  background-color: #F75D58;
   top: 0;
   width:100%;
   padding: 10px 5px;
-  color:#FF9494 ;
+  color:#F75D58 ;
 }
 
 
@@ -35,7 +35,7 @@
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
-  color:#FF0404  ;
+  color:#FFFFFF  ;
 }
 
 
@@ -70,21 +70,30 @@ color: white;
 border-radius:30px;
 }
 a.logo2{
-  background-color: #333;
+  background-color: #FFFFFF;
 }
 </style>
 </head>
 
 <body>
   <div class="header">
-    <a href="home.php" class="logo"<?php if($active=='home') echo "class='logo2'"; ?>>Plasma Plus </a>
+    <a href="home.php" class="logo"<?php if($active=='home') echo "class='logo2'"; ?>>Plasma Plus <img src="image/header_logo.png" width="40" height="40"> </a>
+    
+    <!-- <a title="" data-placement="top" data-toggle="tooltip"
+               class="facebook">
+               <i> class="fa fa-facebook" id="facebook-icon></i>
+               <span>Plasma Plus</span> -->
+
+               <!-- <style> -->
+
+
     <div class="header-right">
     <a href="about_us.php"  <?php if($active=='about') echo "class='act'"; ?> >About Us</a>
     <a href="why_donate_blood.php"  <?php if($active=='why') echo "class='act'"; ?>>Why Donate Blood</a>
       <a href="donate_blood.php"  <?php if($active=='donate') echo "class='act'"; ?>>Become A Donor</a>
       <a href="need_blood.php" <?php if($active=='need') echo "class='act'"; ?>>Need Blood</a>
       <a href="contact_us.php" <?php if($active=='contact') echo "class='act'"; ?>>Contact Us</a>
-      <a href="/login/index.php"  <?php if($active=='about') echo "class='act'"; ?> >Log Out</a>
+      <a href="/PLASMA_PLUS/login.html"  <?php if($active=='about') echo "class='act'"; ?> >Log Out</a>
     </div>
   </div>
 
