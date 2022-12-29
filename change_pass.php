@@ -439,7 +439,7 @@ a.button {
         <div class="container">
             <div class="forms-container">
                 <div class="signin-signup">
-				<?php $User_name=$_GET['name']; ?>
+				<?php $User_name = $_GET["name"]; ?>
                     <form action="forgot_pass_validation.php" method="GET" name="signinform" class="sign-in-form" autocomplete="off">
                         <h2 class="title">Change Password</h2>
                             <div class="input-field">
@@ -451,7 +451,7 @@ a.button {
                                 <input type="password" name="conpassword" placeholder="Confirm Password" />
                             </div>
                             <input type="submit" name="change" value="Change" class="btn solid" />
-                            <input type="hidden" name="name" value="<?php echo $User_name ?>" />
+                            <input type="hidden" name="name" value="<?php echo $User_name; ?>" />
                            
                     </form>
             </div>
